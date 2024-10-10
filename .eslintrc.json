@@ -1,0 +1,22 @@
+{
+  "extends": [
+    "next",
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "plugin:@tanstack/eslint-plugin-query/recommended",
+    "plugin:@next/next/recommended"
+  ],
+  "plugins": ["react", "@typescript-eslint"],
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module"
+  },
+  "rules": {
+    "react/react-in-jsx-scope": 0,
+    "@typescript-eslint/naming-convention": 0, // Được phép sử dụng biến dạng snake_key
+    "import/extensions": 0 // Hỗ trợ import dễ nhìn hơn là ../../
+  }
+}
